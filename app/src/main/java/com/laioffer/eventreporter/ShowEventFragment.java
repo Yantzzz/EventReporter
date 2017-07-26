@@ -54,6 +54,7 @@ public class ShowEventFragment extends Fragment {
                     events.add(event);
                 }
                 eventListAdapter = new EventListAdapter(getContext(), events);
+                eventListAdapter.setUserName(((EventActivity)getActivity()).getUsername());
                 listView.setAdapter(eventListAdapter);
 
             }

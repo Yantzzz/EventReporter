@@ -30,9 +30,11 @@ public class Event {
     private long time;
     private String username;
     private String description;
-
     private int repost;
     private String title;
+    private String imgUri = "";
+
+
 
     public int getRepost() {
         return repost;
@@ -50,7 +52,8 @@ public class Event {
         this.title = title;
     }
 
-    private String imgUri;
+
+
     public String getImgUri() {
         return imgUri;
     }
